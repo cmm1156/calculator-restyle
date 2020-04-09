@@ -1,0 +1,298 @@
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body, html {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  background-color: black;
+  color: white;
+  margin: 15px;
+  font-family: 'Inter', sans-serif;
+}
+
+.header {
+  display: inline-flex;
+  border-radius: 5px;
+  background-color: grey;
+  text-align: center;
+  font-size: 16pt;
+  color: #2b3c82;
+  padding: 10px;
+  z-index: 99;
+  border: solid 2px #999999;
+}
+
+.centeringDiv {
+  display: flex;
+  justify-content: center;
+  margin-bottom: -10px;
+}
+
+.borderContainer {
+  background-color: grey;
+  border: solid 10px grey;
+  border-radius: 5px;
+}
+
+
+.mainContainer {
+  /* margin-top: 10px; */
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+
+  grid-column-gap: 10px;
+}
+
+.color {
+  background-color: #8c2b07;
+  border: solid 1px #8c2b07;
+  border-radius: 5px;
+}
+
+.label {
+  background-color: black;
+  padding-left: 4px;
+  padding-bottom: 6px;
+  font-family: 'Source Code Pro', monospace;
+  padding-right: 5px;
+  color: #33a626;
+  text-shadow: 0px 0px 20px #33a626;
+}
+
+.calcLabel {
+  margin-bottom: 20px;
+}
+
+.calcContainer {
+  grid-column: 1;
+  grid-row: 1;
+  align-content: center;
+
+  display: grid;
+  grid-template-rows: 50px 50px;
+  grid-row-gap: 30px;
+}
+
+
+.inputBlockCalc {
+  grid-row: 1;
+  margin-left: 10px;
+  font-size: 16pt;
+}
+
+.colorfullbox {
+  grid-row: 2;
+  margin-left: 15px;
+  margin-top: 10px;
+
+  display: grid;
+  grid-template-columns: 30px 30px 30px;
+  grid-template-rows: 30px;
+  grid-column-gap: 36px;
+}
+
+.colorfullgrid {
+  grid-column: 1;
+  margin-left: 15px;
+  display: grid;
+  grid-template-columns: repeat(3, 16px);
+  grid-template-rows: repeat(3, 16px);
+
+}
+
+#square1 {
+  background-color: #0e7800;
+  box-shadow: 0px 0px 10px #0e7800;
+  animation: colorChange 5s infinite;
+  animation-delay: 0s;
+  animation-timing-function: steps(3, end);
+
+}
+#square2 {
+  background-color: #0e7800;
+  box-shadow: 0px 0px 10px #0e7800;
+  animation: colorChange 5s infinite;
+  animation-delay: 1s;
+  animation-timing-function: steps(3, end);
+
+}
+#square3 {
+  background-color: #0e7800;
+  box-shadow: 0px 0px 10px #0e7800;
+  animation: colorChange 5s infinite;
+  animation-delay: 3s;
+  animation-fill-mode: backwards;
+  animation-timing-function: steps(3, end);
+
+}
+#square4 {
+  background-color: #0e7800;
+  box-shadow: 0px 0px 10px #0e7800;
+  animation: colorChange 5s infinite;
+  animation-delay: 5s;
+  animation-timing-function: steps(3, end);
+
+}
+#square5 {
+  background-color: #0e7800;
+  box-shadow: 0px 0px 10px #0e7800;
+  animation: colorChange 5s infinite;
+  animation-delay: 5s;
+  animation-fill-mode: backwards;
+  animation-timing-function: steps(3, end);
+
+}
+#square6 {
+  background-color: #0e7800;
+  box-shadow: 0px 0px 10px #0e7800;
+  animation: colorChange 2s infinite;
+  animation-delay: 1s;
+  animation-timing-function: steps(3, end);
+
+}
+#square7 {
+  background-color: #0e7800;
+  box-shadow: 0px 0px 10px #0e7800;
+  animation: colorChange 3s infinite;
+  animation-delay: 3s;
+  animation-timing-function: steps(3, end);
+
+}
+#square8 {
+  background-color: #0e7800;
+  box-shadow: 0px 0px 10px #0e7800;
+  animation: colorChange 5s infinite;
+  animation-delay: 1s;
+  animation-fill-mode: backwards;
+  animation-timing-function: steps(3, end);
+
+}
+#square9 {
+  background-color: #0e7800;
+  box-shadow: 0px 0px 10px #0e7800;
+  animation: colorChange 5s infinite;
+  animation-delay: 0s;
+  animation-fill-mode: backwards;
+  animation-direction: normal;
+  animation-timing-function: steps(3, end);
+
+}
+
+@keyframes colorChange {
+  0% {background-color: #0b6b00; box-shadow: 0px 0px 15px #0b6b00;}
+  50% {background-color: #33a626; box-shadow: 0px 0px 15px #33a626;}
+  100% {background-color: #35ed1f; box-shadow: 0px 0px 15px #35ed1f;}
+}
+
+
+.colorCircle {
+  margin-left: 15px;
+  grid-column: 2;
+}
+#circle {
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  background-color: yellow;
+  border-radius: 50%;
+  height: 48px;
+  width: 48px;
+  box-shadow: 0px 0px 20px yellow;
+  animation: circle1ColorChange 3s infinite;
+  animation-timing-function: steps(2, end);
+  animation-delay: .33s;
+}
+.colorCircle2 {
+  margin-left: 15px;
+  grid-column: 3;
+}
+#circle2 {
+  color: black;
+  background-color: blue;
+  box-shadow: 0px 0px 20px blue;
+  border-radius: 50%;
+  height: 48px;
+  width: 48px;
+  animation: circle2ColorChange 1s infinite;
+  animation-timing-function: steps(2, end);
+}
+
+@keyframes circle1ColorChange {
+  from{background-color: yellow; box-shadow: 0px 0px 20px yellow;}
+  to{background-color: #818f00; box-shadow: 0px 0px 20px transparent;}
+}
+@keyframes circle2ColorChange {
+  from{background-color: blue; box-shadow: 0px 0px 20px blue;}
+  to{background-color: #0013a3; box-shadow: 0px 0px 20px transparent;}
+}
+
+
+
+
+.fortuneContainer {
+  grid-column: 2;
+  grid-row: 1;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-row-gap: 0px;
+}
+
+.inputBlockFortune {
+  grid-row: 1;
+  margin-left: 10px;
+  font-size: 16pt;
+  margin-top: 20px;
+  /* align-self: center; */
+}
+
+.fortuneLabel {
+  margin-top: 20px;
+}
+
+#fortune-output {
+  grid-row: 2;
+  align-self: center;
+  margin: 0px;
+  padding: 0px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content:flex-start;
+
+  font-size: 16pt;
+  margin-left: 15px;
+}
+
+#fortune-output-paragraph {
+  display: flex;
+  justify-content:center;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1pt;
+
+  background-color: white;
+  border-radius: 5px;
+
+  animation-name: rotate;
+  animation-duration: 3s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+  transition: 3s;
+}
+
+@keyframes rotate {
+  /* 0%{transform: rotate(0deg);}
+  33%{transform: rotate(360deg);}
+  66%{transform: rotate(360deg);} */
+  /* 50%{transform: rotate(360deg);} */
+  100%{transform: rotate(360deg);}
+}
